@@ -1,0 +1,57 @@
+1、Tars
+	1.1 https://github.com/TarsCloud
+
+2、DCache
+	2.1 https://github.com/Tencent/DCache
+
+3、TSeer
+	3.1 https://github.com/Tencent/TSeer
+	
+4、OpenResty
+	4.1 https://openresty.org
+
+5、TBase
+	5.1 https://github.com/Tencent/TBase
+	
+6、服务发现
+	5.1 
+
+7、服务配置
+	6.1 
+
+
+
+API GateWay
+
+1、OAuth2
+	1.1 鉴权
+	
+2、OpenResty
+	2.1 代理、负载均衡
+	
+3、kong
+	3.1 开源API网关
+	
+4、Nginx
+	4.1 代理，负载均衡
+	4.2 限量
+
+
+
+
+Monitor
+
+1、promethus
+
+2、grafana
+
+
+
+
+
+业务Question:
+
+1、曲线上等间距获取坐标点
+2、
+
+	
