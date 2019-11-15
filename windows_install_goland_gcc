@@ -1,0 +1,12 @@
+MSYS2-Windows下的GNU搭建
+
+https://www.cnblogs.com/findumars/p/6360852.html
+
+MSYS2 下载
+https://www.msys2.org/ 
+
+
+export http_proxy= 
+export https_proxy= 
+pacman -S mingw-w64-x86_64-gcc   
+pacman -S mingw-w64-x86_64-openssl
