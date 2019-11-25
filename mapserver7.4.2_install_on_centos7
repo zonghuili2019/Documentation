@@ -1,0 +1,13 @@
+yum install libjpeg-turbo.x86_64 libjpeg-turbo-devel.x86_64
+yum install freetype.x86_64 freetype-devel.x86_64
+yum install proj.x86_64 proj-devel.x86_64
+yum install fribidi.x86_64 fribidi-devel.x86_64
+yum install harfbuzz.x86_64 harfbuzz-devel.x86_64 
+yum install cairo.x86_64 cairo-devel.x86_64
+yum install geos.x86_64 geos-devel.x86_64
+yum install postgresql.x86_64 postgresql-devel.x86_64 postgresql-libs.x86_64
+yum install librsvg2.x86_64 librsvg2-devel.x86_64
+yum install curl.x86_64 libcurl-devel.x86_64 libcurl.x86_64 
+yum install libxml2.x86_64 libxml2-devel.x86_64 libxml2-static.x86_64 
+yum install giflib.x86_64 giflib-devel.x86_64 giflib-utils.x86_64
+yum install swig.x86_64 
