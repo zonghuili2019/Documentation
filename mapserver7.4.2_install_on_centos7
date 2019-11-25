@@ -11,3 +11,7 @@ yum install curl.x86_64 libcurl-devel.x86_64 libcurl.x86_64
 yum install libxml2.x86_64 libxml2-devel.x86_64 libxml2-static.x86_64 
 yum install giflib.x86_64 giflib-devel.x86_64 giflib-utils.x86_64
 yum install swig.x86_64 
+yum install fcgi.x86_64  fcgi-devel.x86_64 
+
+yum install libbsd-devel
+yum install blis-threads64.x86_64  
