@@ -1,0 +1,104 @@
+yum install spawn-fcgi
+
+echo >  /etc/init.d/mapserv
+
+
+
+
+
+#! /bin/sh
+#
+# description: Mapserver Service Manager
+# processname: lt-mapserv
+# pidfile: /var/run/mapserv.pid
+# Source function library.
+#. /etc/init.d/functions
+# Check that networking is up.
+#. /etc/sysconfig/network
+if [ "$NETWORKING" = "no" ]
+then
+        exit 0
+fi
+PREFIX=/usr
+NAME=mapserv
+PID=/var/run/mapserv.pid
+DAEMON=$PREFIX/bin/spawn-fcgi
+DAEMON_OPTS=" -a 127.0.0.1 -p 9999 -F 4 -u user -U user -P $PID $PREFIX/local/bin/mapserv"
+start () {
+    echo -n $"Starting $NAME "
+        exec $DAEMON $DAEMON_OPTS >> /dev/null
+        daemon --pidfile $PID
+        RETVAL=$?
+        echo
+    [ $RETVAL -eq 0 ]
+}
+stop () {
+    echo -n $"Stopping $NAME "
+        killproc -p $PID
+        #make sure all mapservers are closed
+        pkill -f lt-mapserv
+        RETVAL=$?
+        echo
+    if [ $RETVAL -eq 0 ] ; then
+                rm -f $PID
+        fi
+}
+restart () {
+    stop
+    start
+}
+# See how we were called.
+case "$1" in
+  start)
+        start
+    ;;
+  stop)
+        stop
+    ;;
+  status)
+    status lt-mapserv
+        RETVAL=$?
+        ;;
+  restart)
+    restart
+        ;;
+  *)
+        echo $"Usage: $0 {start|stop|status|restart}"
+        RETVAL=2
+        ;;
+esac
+exit $RETVAL
+
+
+
+make it executable
+
+
+create nginx config file
+
+server {
+    ##another server config
+    listen   80;
+    server_name  your_server.name www.mapserver.your_server.name;
+    #MapServer
+        location / {
+                fastcgi_pass   127.0.0.1:9999;
+                fastcgi_index  mapserv?*;
+                fastcgi_param  SCRIPT_FILENAME  /usr/lib/cgi-bin/mapserv$fastcgi_script_name;
+                include fastcgi_params;
+ 
+    }
+}
+
+
+Its all with configurations. Now you can start FastCGI script:
+
+service mapserv start 
+And start nginx:
+
+/etc/init.d/nginx start
+Go to the localhost/map/ and if you do all right you'll see:
+
+
+No query information to decode. QUERY_STRING is set, but empty.
+Its mean that MapServer+nginx work fine.
