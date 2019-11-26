@@ -15,3 +15,12 @@ yum install fcgi.x86_64  fcgi-devel.x86_64
 
 yum install libbsd-devel
 yum install blis-threads64.x86_64  
+
+
+
+https://github.com/OSGeo/PROJ
+
+https://github.com/OSGeo/GDAL.git
+
+gdal.pc  sqlite3.pc
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig 
