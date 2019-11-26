@@ -1,0 +1,6 @@
+undefined  sqlite3_column_origin_name 
+
+
+sqlite3.h中添加
+
+#define SQLITE_ENABLE_COLUMN_METADATA
