@@ -1,3 +1,5 @@
+1 安装需要的依赖  CentOS7
+
 yum install libjpeg-turbo.x86_64 libjpeg-turbo-devel.x86_64
 yum install freetype.x86_64 freetype-devel.x86_64
 yum install proj.x86_64 proj-devel.x86_64
@@ -17,10 +19,29 @@ yum install libbsd-devel
 yum install blis-threads64.x86_64  
 
 
+2 编译依赖项的源码
 
 https://github.com/OSGeo/PROJ
 
 https://github.com/OSGeo/GDAL.git
 
+
 gdal.pc  sqlite3.pc
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig 
+
+4 mapserver 编译
+  cd mapserver-rel-7-4-2
+  mkdir build
+  cmake .. 
+  
+  
+ 5 basemaps 编译 
+   cd basemaps-master
+   vim Makefile
+   # 打开需要用到的编译项目
+   make 
+  
+   
+
+
+mapserver
