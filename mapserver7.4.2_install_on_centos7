@@ -1,5 +1,7 @@
 1 安装需要的依赖  CentOS7
 
+--setopt=protected_multilib=false  同时存在x_86  i686时添加该选项。
+
 yum install libjpeg-turbo.x86_64 libjpeg-turbo-devel.x86_64
 yum install freetype.x86_64 freetype-devel.x86_64
 yum install proj.x86_64 proj-devel.x86_64
