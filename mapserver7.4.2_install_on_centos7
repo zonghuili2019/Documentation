@@ -42,7 +42,9 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
    vim Makefile
    # 打开需要用到的编译项目
    make 
-  
+   # 进入data目录下载数据
+   cd data
+   make
    
 
 
