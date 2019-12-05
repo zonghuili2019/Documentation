@@ -1,5 +1,7 @@
 yum install spawn-fcgi
 
+/usr/sbin/useradd user -s /bin/false
+
 echo >  /etc/init.d/mapserv
 
 
@@ -102,3 +104,6 @@ Go to the localhost/map/ and if you do all right you'll see:
 
 No query information to decode. QUERY_STRING is set, but empty.
 Its mean that MapServer+nginx work fine.
+
+http://127.0.0.1/mapserv?map=/data/github/basemaps/osm-default.map&mode=map
+
