@@ -1,0 +1,19 @@
+postgis安装
+
+
+
+
+
+
+
+
+
+osd data 下载：
+http://download.geofabrik.de/
+
+使用osm2pgsql工具导入数据到postgis中：
+
+sudo -u postgres ./osm2pgsql --create --database osm centre-latest.osm.pbf
+sudo -u postgres ./osm2pgsql --create --database osm poitou-charentes-latest.osm.pbf
+
+
