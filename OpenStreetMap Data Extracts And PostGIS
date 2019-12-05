@@ -2,14 +2,23 @@ postgis安装
 
 
 
+sudo vim /var/lib/pgsql/data/pg_hba.conf
+修改成如下所示
+local   all         all                               trust
+host    all         all         127.0.0.1/32          trust
+host    all         all         ::1/128               trust
+host    all         all         0.0.0.0/0             md5
 
 
-
-
+rpm -ivh postgresql-libs-9.2.24-1.el7_5.x86_64.rpm
+rpm -ivh postgresql-9.2.24-1.el7_5.x86_64.rpm
+rpm -ivh postgresql-devel-9.2.24-1.el7_5.x86_64.rpm
+rpm -ivh postgresql-server-9.2.24-1.el7_5.x86_64.rpm
 
 
 osd data 下载：
 http://download.geofabrik.de/
+
 
 使用osm2pgsql工具导入数据到postgis中：
 
