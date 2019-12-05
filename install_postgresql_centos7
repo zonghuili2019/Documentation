@@ -24,3 +24,10 @@ or
 su --shell /bin/bash postgres    su - postgres
 psql -d template1 -c "ALTER USER postgres WITH PASSWORD 'NewPassword';"
 psql postgres
+
+shell脚本
+
+sudo -u postgres createdb osm
+sudo -u postgres psql -d osm -c "CREATE EXTENSION postgis;"
+sudo -u postgres createuser -D -l -R -S -P "www-data"
+sudo -u postgres psql -d osm -c 'GRANT ALL ON ALL TABLES IN SCHEMA public TO "www-data";'
