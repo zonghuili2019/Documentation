@@ -36,9 +36,18 @@ API GateWay
 	
 4、Nginx
 	4.1 代理，负载均衡
-	4.2 限量
+	4.2 限流
+	4.3 Nginx的Cache功能
+	4.4 Nginx实现部分CDN功能
+	4.5 http/https
+
+5、keepalived
+	5.1 基于VIP的高可用
 
 
+6、Dnsmasq
+	6.1 基于DNS的名字系统的
+	
 
 
 Monitor
