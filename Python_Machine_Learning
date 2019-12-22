@@ -1,4 +1,19 @@
+Anaconda Python 是完全免费的企业级的Python发行大规模数据处理、预测分析和科学计算工具，
+Linux系统里面，Anaconda 安装、更新和删除都很方便,且所有的东西都只安装在一个目录中
+/home/wxp/anaconda/,这点比下面的Canopy要好得多。Anaconda的开发和维护中有Python创始人和社区的核心成员。
+Anaconda目前提供Python 2.6.9,Python 2.7.X和Python 3.3.X三个系列发行包，这也是其他发行版所望尘莫及的。
+因此在各种操作系统中，无论是Linux，还是Windows、Mac,都推荐Anaconda！
+
+
+
 1、NumPy
 2、Scipy
 3、MatPlotLib
-4、Sklearn
+4、Pandas
+5、Sklearn  
+6、TensorFlow
+7、Keras
+    Keras是一个由Python编写的开源人工神经网络库，可以作为Tensorflow、Microsoft-CNTK和Theano的高阶应用程序接口，
+    进行深度学习模型的设计、调试、评估、应用和可视化。
+8、Kaggle
+    Kaggle成立于2010年，是一个进行数据发掘和预测竞赛的在线平台。
