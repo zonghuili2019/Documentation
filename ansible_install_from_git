@@ -1,0 +1,27 @@
+从源码安装的步骤
+
+$ git clone git://github.com/ansible/ansible.git --recursive
+$ cd ./ansible
+
+使用 Bash:
+
+$ source ./hacking/env-setup
+使用 Fish:
+
+$ . ./hacking/env-setup.fish
+If you want to suppress spurious warnings/errors, use:
+
+$ source ./hacking/env-setup -q
+如果没有安装pip, 请先安装对应于你的Python版本的pip:
+
+$ sudo easy_install pip
+以下的Python模块也需要安装:
+
+$ sudo pip install paramiko PyYAML Jinja2 httplib2 six
+注意,当更新ansible版本时,不只要更新git的源码树,也要更新git中指向Ansible自身模块的 “submodules” (不是同一种模块)
+
+$ git pull --rebase
+$ git submodule update --init --recursive
+
+
+
