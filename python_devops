@@ -1,0 +1,22 @@
+1、Invoke 
+is a Python (2.7 and 3.4+) task execution tool & library, 
+drawing inspiration from various sources to arrive at a powerful & clean feature set.
+
+2、Paramiko 
+is a Python (2.7, 3.4+) implementation of the SSHv2 protocol,
+providing both client and server functionality. 
+While it leverages a Python C extension for low level cryptography (Cryptography),
+Paramiko itself is a pure Python interface around SSH networking concepts.
+
+3、Fabric 
+is a high level Python (2.7, 3.4+) library designed to execute shell commands 
+remotely over SSH, yielding useful Python objects in return.
+
+4、Pexpect 
+is a pure Python module for spawning child applications; controlling them; 
+and responding to expected patterns in their output. Pexpect works like Don Libes’ Expect. 
+Pexpect allows your script to spawn a child application and control it 
+as if a human were typing commands.
+
+5、Ansible
+
