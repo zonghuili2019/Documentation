@@ -1,15 +1,11 @@
+https://github.com/dpkp/kafka-python
+
 bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --list
-
 bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --describe --topic test
-
-
-
 
 bin/kafka-consumer-groups.sh --bootstrap-server 127.0.0.1:9092 --list
 bin/kafka-topics.sh  --bootstrap-server 127.0.0.1:9092 --list
 bin/kafka-topics.sh  --bootstrap-server 127.0.0.1:9092 --describe --topic test
-
-
 
 bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
