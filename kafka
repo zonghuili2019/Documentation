@@ -3,16 +3,17 @@ https://github.com/dpkp/kafka-python
 bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --list
 bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --describe --topic test
 
+topic相关
+bin/kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --list
+bin/kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --describe --topic test
+bin/kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --delete --topic test
+bin/kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --create --replication-factor 1 --partitions 1 --topic test
+
+bin/kafka-console-producer.sh --broker-list 127.0.0.1:9092 --topic test
+bin/kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic test --from-beginning
+bin/kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --group OpenP_TripT_001 --topic OpenP_TripT2
+
 bin/kafka-consumer-groups.sh --bootstrap-server 127.0.0.1:9092 --list
-bin/kafka-topics.sh  --bootstrap-server 127.0.0.1:9092 --list
-bin/kafka-topics.sh  --bootstrap-server 127.0.0.1:9092 --describe --topic test
-
-bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
-bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
-
-查看group的状态
+bin/kafka-consumer-groups.sh --bootstrap-server 127.0.0.1:9092 --delete --group testG 
 bin/kafka-consumer-groups.sh --bootstrap-server 127.0.0.1:9092 --group OpenP_TripT_001 --describe --dry-run 
 
-消费group的topic中的消息
-bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --group OpenP_TripT_001 --topic OpenP_TripT2
- 
