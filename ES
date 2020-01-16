@@ -1,12 +1,17 @@
+
 IPPORT=localhost:9200
+_index=data-1402
+_type=doc
 
 curl $IPPORT/_cat/nodes
 curl "$IPPORT/_cat/indices?v"
 
-获取索引下的所有数据，默认给10个
-curl "$IPPORT/data-1402/_search"
+#获取索引下的所有数据，默认给10个
+curl "$IPPORT/${_index}/_search"
+#获取每一个
+curl "$IPPORT/${_index}/${_type}/${_id}"
+#分页
+curl "$IPPORT/${_index}/_search?size=2&from=1"
 
-curl "$IPPORT/${_index}/${_doc}/${_id}"
-
-删除对应的索引
+#删除对应的索引
 curl -X DELETE "$IPPORT/data-1402"
