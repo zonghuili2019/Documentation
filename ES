@@ -6,12 +6,15 @@ _type=doc
 curl $IPPORT/_cat/nodes
 curl "$IPPORT/_cat/indices?v"
 
+#创建索引
+curl -XPUT "$IPPORT/customer?pretty"
+
 #获取索引下的所有数据，默认给10个
-curl "$IPPORT/${_index}/_search"
+curl "$IPPORT/${_index}/_search?pretty"
 #获取每一个
-curl "$IPPORT/${_index}/${_type}/${_id}"
+curl "$IPPORT/${_index}/${_type}/${_id}?pretty"
 #分页
-curl "$IPPORT/${_index}/_search?size=2&from=1"
+curl "$IPPORT/${_index}/_search?size=2&from=1?pretty"
 
 #删除对应的索引
-curl -X DELETE "$IPPORT/data-1402"
+curl -X DELETE "$IPPORT/${_index}?pretty"
