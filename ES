@@ -14,7 +14,7 @@ curl "$IPPORT/${_index}/_search?pretty"
 #获取每一个
 curl "$IPPORT/${_index}/${_type}/${_id}?pretty"
 #分页
-curl "$IPPORT/${_index}/_search?size=2&from=1?pretty"
+curl "$IPPORT/${_index}/_search?size=2&from=1&pretty"
 
 #删除对应的索引
 curl -X DELETE "$IPPORT/${_index}?pretty"
