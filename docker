@@ -1,0 +1,6 @@
+1、docker启动失败
+Error starting daemon: Error initializing network controller: list bridge addresses failed: no available network
+
+手动添加一个网桥
+ip link add name docker0 type bridge
+ip addr add dev docker0 172.17.0.1/16
