@@ -4,3 +4,10 @@ Error starting daemon: Error initializing network controller: list bridge addres
 手动添加一个网桥
 ip link add name docker0 type bridge
 ip addr add dev docker0 172.17.0.1/16
+
+
+
+2、/usr/bin/docker-current: Error response from daemon: shim error: docker-runc not installed on system.
+解决方法
+sudo ln -s /usr/libexec/docker/docker-runc-current /usr/bin/docker-runc
+
