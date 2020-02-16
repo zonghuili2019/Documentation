@@ -1,0 +1,59 @@
+分布式基础架构
+1、Tars
+	1.1 https://github.com/TarsCloud  (登录权限+分布式追踪)
+
+2、DCache
+	2.1 https://github.com/Tencent/DCache
+	2.2 https://github.com/CodisLabs/codis
+	2.3 https://github.com/Qihoo360/pika
+
+3、CVM（OpenStack） = kvm + linux namespace & cgroup
+  3.1 SDN软件定义网络
+  3.2 大二层网络和三层overlay网络
+
+4、容器编排
+  4.1 docker swarm（适用于对自动化要求比较低的环境）
+  4.2 kubernetes（适用于对自动化要求比较高的环境）
+
+5、Dnsmasq
+	5.1 基于DNS的名字系统的
+  
+6、自动化安装部署
+  6.1 ansible （声明式配置文件）
+  6.2 shell （命令式配置文件）
+  6.3 Fabric
+  6.4 pssh
+
+7、Monitor
+  7.1、promethus
+  7.2、grafana
+  7.3、cAdvisor（容器监控）
+
+8、Service Mesh
+  8.1 docker swarm
+  8.2 istio
+  
+开放平台
+
+1、OAuth2 & OpenID
+	1.1 https://www.keycloak.org/ 
+  1.2 微信小程序的登录流程
+  1.3 微信企业号的登录流程（redirect_url）
+	
+2、kong
+	2.1 开源API网关
+	
+3、Nginx
+	4.1 代理，负载均衡
+	4.2 限流
+	4.3 Nginx的Cache功能
+	4.4 Nginx实现部分CDN功能
+	4.5 http/https
+
+大数据平台
+1、HBase
+2、ElasticSearch
+3、Kafka
+
+业务Question:
+
