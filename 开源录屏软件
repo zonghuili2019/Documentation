@@ -1,6 +1,10 @@
 目前我用过的最好的免费的开源非常优秀的录屏软件只有3个，推荐给大家：
 
 1.ScreenToGif
+https://github.com/NickeManarin/ScreenToGif
+
+Idon't care if you copy the source code to use in your project, but please avoid simply changing the name and selling as your work. 
+ That's not why I'm sharing the source code, at all.
 
 国外的一款Gif动画录制工具。它是免费的开源软件，体积非常小巧，只有几百KB。用户可以使用它，录制电脑屏幕的各种画面，
 然后将其保存为gif、视频、png、psd等文件。值得一提的是，所有的录制内容，我们都可以使用软件自带的编辑器进行编辑，做删除帧、增加帧、重复播放、裁剪等操作。
@@ -8,9 +12,10 @@
 除了录制的视频编辑，它还能直接导入视频进行编辑，然后另存为成gif格式。如此一来，我们以后不管需要什么gif图片，都能自己制作了。
 最重要的是，它不管是录制，还是编辑，最终的成品清晰度都不错，需要的朋友，可以去Github免费下载使用。
 
-
-ScreenToGif
 2.Captura （强烈推荐）
+https://github.com/MathewSachin/Captura
+
+MIT License
 
 录制游戏视频解说、游戏精彩画面、课程教学、视频直播，就需要使用到视频录制工具，现在有很多的视频录制工具，很多都需要收费激活才能无限制录制，
 普通用户录制视频在时间、功能上会受到限制，不能很好地录制一个完美的视频，因此小编特意带了Captura这款屏幕录像工具，软件绿色小巧，简单易用，
@@ -21,9 +26,10 @@ ScreenToGif
 除了视频录制功能之外，该软件还拥有视频编解码器，可以对视频进行解码，支持mp4、avi、GIF、webm等格式，可以满足一般的解码需要。
 还支持屏幕截图、剪贴板，简单的图像编辑等功能，是一款非常好用的屏幕录像工具，需要的朋友，可以去Github免费下载使用。
 
-
-Captura
 3.OBS Studio
+https://github.com/obsproject/obs-studio
+
+It's distributed under the GNU General Public License v2 (or any later version) 
 
 一款非常知名，使用用户庞大的一款OBS直播软件，非常强大的免费开源无广告国外开发的软件(录屏只是其功能之一， 
 并且对于某些高端玩家既要录制屏幕又要录制摄像头选择这款)，该软件的直播架构模式是采用开元的方式进行录制的，
@@ -33,7 +39,6 @@ Captura
 比传统OBS软件功能更加丰富，好用！
 
 不管你是想要录制下软件的操作教程还是游戏的玩法视频，都可以通过obs视频录制来完成。它可以让你快速清晰地录制下每一个步骤哦！需要的朋友，可以去Github免费下载使用。
-
 
 OBS Studio
 上面我推荐的三款产品可以满足99.9%的人的需求， 并且全部免费绿色Github开源，希望大家喜欢。
