@@ -25,3 +25,7 @@ bin/kafka-consumer-groups.sh --bootstrap-server 127.0.0.1:9092 --list
 bin/kafka-consumer-groups.sh --bootstrap-server 127.0.0.1:9092 --delete --group testG 
 bin/kafka-consumer-groups.sh --bootstrap-server 127.0.0.1:9092 --group OpenP_TripT_001 --describe --dry-run 
 
+压力测试
+bin/kafka-producer-perf-test.sh --topic test --num-records 1 --record-size 10000000 --throughput  -1 --producer-props bootstrap.servers=localhost:9092
+
+
