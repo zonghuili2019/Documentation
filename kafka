@@ -30,8 +30,8 @@ bin/kafka-producer-perf-test.sh --topic test --num-records 1 --record-size 10000
 bin/kafka-producer-perf-test.sh --topic test --num-records 100000000 --record-size 10000000 --throughput  -1 --producer-props bootstrap.servers=localhost:9092 --producer.config config/producer.properties
 
 删除数据后，修改offset
-
 bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group T --reset-offsets --all-topics --to-offset  1000  --execute
 bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group T --reset-offsets --all-topics --to-current --execute
+bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group T --reset-offsets --all-topics -–to-latest  --execute
 
 
