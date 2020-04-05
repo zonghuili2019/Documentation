@@ -27,5 +27,6 @@ bin/kafka-consumer-groups.sh --bootstrap-server 127.0.0.1:9092 --group OpenP_Tri
 
 压力测试
 bin/kafka-producer-perf-test.sh --topic test --num-records 1 --record-size 10000000 --throughput  -1 --producer-props bootstrap.servers=localhost:9092
+bin/kafka-producer-perf-test.sh --topic test --num-records 100000000 --record-size 10000000 --throughput  -1 --producer-props bootstrap.servers=localhost:9092 --producer.config config/producer.properties
 
 
