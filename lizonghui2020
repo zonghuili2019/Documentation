@@ -67,4 +67,5 @@
 
 技术Question:
    1、c/c++服务无损重启    https://github.com/amscanne/huptime  
-   2、解决socket accept在linux内核中跨cpu问题  https://github.com/fastos/fastsocket
+   2、golang SO_REUSEPORT https://github.com/gogf/greuse
+   3、解决socket accept在linux内核中跨cpu问题  https://github.com/fastos/fastsocket
