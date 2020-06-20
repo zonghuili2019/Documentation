@@ -65,6 +65,6 @@
 	5、spark
 	6、ceph
 
-业务Question:
+技术Question:
    1、c/c++服务无损重启    https://github.com/amscanne/huptime  
-
+   2、解决socket accept在linux内核中跨cpu问题  https://github.com/fastos/fastsocket
