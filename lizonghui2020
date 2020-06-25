@@ -70,4 +70,4 @@
    2、golang SO_REUSEPORT https://github.com/gogf/greuse
    3、解决socket accept在linux内核中跨cpu问题  https://github.com/fastos/fastsocket
    4、linux 内核性能分析工具   perf
-   5、linux 应用程序(c/c++/go)性能分析工具 https://github.com/gperftools/gperftools 
+   5、linux 应用程序(c/c++/go)性能分析工具 pprof   https://github.com/gperftools/gperftools 
