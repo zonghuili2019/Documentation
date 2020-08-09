@@ -14,6 +14,7 @@
 4、容器编排
   	4.1 docker swarm（适用于对自动化要求比较低的环境）
   	4.2 kubernetes（适用于对自动化要求比较高的环境）
+	4.3 https://rancher2.docs.rancher.cn/
 
 5、Dnsmasq
 	5.1 基于DNS的名字系统的
@@ -71,4 +72,4 @@
    3、解决socket accept在linux内核中跨cpu问题  https://github.com/fastos/fastsocket
    4、linux 内核性能分析工具   perf
    5、linux 应用程序(c/c++/go)性能分析工具 pprof   https://github.com/gperftools/gperftools 
-   6、火焰图 https://github.com/brendangregg/FlameGraph
+   6、火焰图 https://github.com/brendangregg/FlameGraph 
