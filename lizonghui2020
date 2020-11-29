@@ -50,6 +50,7 @@
 	
 2、kong
 	2.1 开源API网关
+	2.2 Apache APISIX
 	
 3、Nginx/openresty
 	4.1 代理，负载均衡
