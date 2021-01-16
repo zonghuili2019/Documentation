@@ -7,3 +7,4 @@
 5、k8s管理 https://github.com/gardener/gardener
 6、Keycloak Gatekeeper has moved to the Louketo Proxy project. 
     https://github.com/louketo/louketo-proxy
+    https://github.com/oauth2-proxy/oauth2-proxy
