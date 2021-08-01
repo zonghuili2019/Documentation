@@ -1,0 +1,18 @@
+Shp---->PG
+
+.\ogr2ogr.exe -f PostgreSQL PG:"host=192.168.1.11 dbname=postgres user=postgres password=123456 port=25432" D:\CHN_adm0\CHN_adm1.shp
+
+midmif---->PG
+
+ogr2ogr -f PostgreSQL PG:"host=192.168.1.11 dbname=lzh user=postgres password=123456 port=15432" "Postcode Area Boundaries.MIF" -t_srs EPSG:3857 -nlt MULTIPOLYGON -overwrite -nln postcode_area_boundaries
+.\ogr2ogr.exe -f PostgreSQL PG:"host=192.168.1.11 dbname=lzh user=postgres password=123456 port=15432" D:\lizonghui_work\x.mif -t_srs EPSG:3857
+.\ogr2ogr.exe -f PostgreSQL PG:"host=192.168.1.11 dbname=postgres user=postgres password=123456 port=25432" D:\lizonghui_work\x.mif  -nln lzh  -select  id,poi_name,poi_kind
+
+GP---->Shp
+
+ .\ogr2ogr.exe -f "ESRI Shapefile"   D:\CHN_adm0\CHN_adm1.shp   "PG:host=192.168.1.11 dbname=postgres user=postgres password=123456 port=25432" -sql "select * from lzh"
+ .\ogr2ogr.exe  -f "ESRI Shapefile"   D:\CHN_adm0\CHN_adm1.shp   "PG:host=192.168.1.11 dbname=postgres user=postgres password=123456 port=25432"  -sql "select * from lzh"   -lco encoding=UTF-8
+
+delete shp fields
+
+ .\ogr2ogr.exe  -f "ESRI Shapefile"   D:\CHN_adm0\CHN_adm2.shp  D:\CHN_adm0\CHN_adm1.shp  -select "id,poi_kind"
