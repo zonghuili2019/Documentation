@@ -2,3 +2,27 @@ https://www.postgresql.org/ftp/pgadmin/pgadmin4/v4.16/pip/
 pip install pgadmin4-4.16-py2.py3-none-any.whl
 
 gunicorn  --bind 0.0.0.0:80  --workers=1 --chdir /usr/lib/python2.7/site-packages/pgadmin4 pgAdmin4:app
+
+
+
+
+
+
+
+docker run --name some-postgis -e POSTGRES_PASSWORD=123456 -p 15432:5432 --restart=always -d postgis/postgis:12-2.5
+
+docker run   -e POSTGRES_PASSWORD=123456 -p 25432:5432 --restart=always -d postgis/postgis:10-2.5
+
+docker run -p 80:80 \
+    -e 'PGADMIN_DEFAULT_EMAIL=user@domain.com' \
+    -e 'PGADMIN_DEFAULT_PASSWORD=123456' \
+    --restart=always \
+    -d dpage/pgadmin4:5.4
+
+docker run -p 80:80 \
+    -e 'PGADMIN_DEFAULT_EMAIL=user@domain.com' \
+    -e 'PGADMIN_DEFAULT_PASSWORD=SuperSecret' \
+    -e 'PGADMIN_CONFIG_ENHANCED_COOKIE_PROTECTION=True' \
+    -e 'PGADMIN_CONFIG_LOGIN_BANNER="Authorised users only!"' \
+    -e 'PGADMIN_CONFIG_CONSOLE_LOG_LEVEL=10' \
+    -d dpage/pgadmin4:5.4
